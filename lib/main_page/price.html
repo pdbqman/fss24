@@ -1,0 +1,291 @@
+
+<style>
+.pricingTable{
+ text-align: center;
+}
+.pricingTable .pricingTable-header{
+ padding: 30px 0;
+ background: #4d4d4d;
+ position: relative;
+ transition: all 0.3s ease 0s;
+}
+.pricingTable:hover .pricingTable-header{
+ background: #09b2c6;
+}
+.pricingTable .pricingTable-header:before,
+.pricingTable .pricingTable-header:after{
+ content: "";
+ width: 16px;
+ height: 16px;
+ border-radius: 50%;
+ border: 1px solid #d9d9d8;
+ position: absolute;
+ bottom: 12px;
+}
+.pricingTable .pricingTable-header:before{
+ left: 40px;
+}
+.pricingTable .pricingTable-header:after{
+ right: 40px;
+}
+.pricingTable .heading{
+ font-size: 20px;
+ color: #fff;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ margin-top: 0;
+}
+.pricingTable .price-value{
+ display: inline-block;
+ position: relative;
+ font-size: 55px;
+ font-weight: bold;
+ color: #09b1c5;
+ transition: all 0.3s ease 0s;
+}
+.pricingTable:hover .price-value{
+ color: #fff;
+}
+.pricingTable .currency{
+ font-size: 30px;
+ font-weight: bold;
+ position: absolute;
+ top: 6px;
+ left: -19px;
+}
+.pricingTable .month{
+ font-size: 16px;
+ color: #fff;
+ position: absolute;
+ bottom: 15px;
+ right: -30px;
+ text-transform: uppercase;
+}
+.pricingTable .pricing-content{
+ padding-top: 50px;
+ background: #fff;
+ position: relative;
+}
+.pricingTable .pricing-content:before,
+.pricingTable .pricing-content:after{
+ content: "";
+ width: 16px;
+ height: 16px;
+ border-radius: 50%;
+ border: 1px solid #7c7c7c;
+ position: absolute;
+ top: 12px;
+}
+.pricingTable .pricing-content:before{
+ left: 40px;
+}
+.pricingTable .pricing-content:after{
+ right: 40px;
+}
+.pricingTable .pricing-content ul{
+ padding: 0 20px;
+ margin: 0;
+ list-style: none;
+}
+.pricingTable .pricing-content ul:before,
+.pricingTable .pricing-content ul:after{
+ content: "";
+ width: 8px;
+ height: 46px;
+ border-radius: 3px;
+ background: linear-gradient(to bottom,#818282 50%,#727373 50%);
+ position: absolute;
+ top: -22px;
+ z-index: 1;
+ box-shadow: 0 0 5px #707070;
+ transition: all 0.3s ease 0s;
+}
+.pricingTable:hover .pricing-content ul:before,
+.pricingTable:hover .pricing-content ul:after{
+ background: linear-gradient(to bottom, #40c4db 50%, #34bacc 50%);
+}
+.pricingTable .pricing-content ul:before{
+ left: 44px;
+}
+.pricingTable .pricing-content ul:after{
+ right: 44px;
+}
+.pricingTable .pricing-content ul li{
+ font-size: 15px;
+ font-weight: bold;
+ color: #777473;
+ padding: 10px 0;
+ border-bottom: 1px solid #d9d9d8;
+}
+.pricingTable .pricing-content ul li:last-child{
+ border-bottom: none;
+}
+.pricingTable .read{
+ display: inline-block;
+ font-size: 16px;
+ color: #fff;
+ text-transform: uppercase;
+ background: #d9d9d8;
+ padding: 8px 25px;
+ margin: 30px 0;
+ transition: all 0.3s ease 0s;
+}
+.pricingTable .read:hover{
+ text-decoration: none;
+}
+.pricingTable:hover .read{
+ background: #09b1c5;
+}
+@media screen and (max-width: 990px){
+ .pricingTable{ margin-bottom: 25px; }
+}
+
+.pricingTable .best{
+ width: 80px;
+ height: 80px;
+ background: #82b440;
+ border-radius: 50%;
+ padding: 25px 20px 20px;
+ font-size: 13px ;
+ text-transform: capitalize;
+ line-height: 13px;
+ position: absolute;
+ right: -30px;
+ top: 60px;
+ z-index: 1;
+ color:#fff;
+ border:3px solid #fff;
+ transition: all 0.5s ease-in-out;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#bfd255+0,8eb92a+50,72aa00+51,9ecb2d+100;Green+Gloss */
+background: rgb(191,210,85); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(191,210,85,1) 0%, rgba(142,185,42,1) 50%, rgba(114,170,0,1) 51%, rgba(158,203,45,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(191,210,85,1) 0%,rgba(142,185,42,1) 50%,rgba(114,170,0,1) 51%,rgba(158,203,45,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(191,210,85,1) 0%,rgba(142,185,42,1) 50%,rgba(114,170,0,1) 51%,rgba(158,203,45,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bfd255', endColorstr='#9ecb2d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+.pricingTable .best:hover{
+ border:3px solid #fff;
+ transform: rotateY(360deg);
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feccb1+0,f17432+50,ea5507+51,fb955e+100;Red+Gloss+%232 */
+background: rgb(254,204,177); /* Old browsers */
+background: -moz-linear-gradient(-45deg,  rgba(254,204,177,1) 0%, rgba(241,116,50,1) 50%, rgba(234,85,7,1) 51%, rgba(251,149,94,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(254,204,177,1) 0%,rgba(241,116,50,1) 50%,rgba(234,85,7,1) 51%,rgba(251,149,94,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feccb1', endColorstr='#fb955e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
+#emailHelp{
+	font-size:12px;
+	color:#fff !important;
+	position:absolute;
+	left:50%;
+	width:110px;
+	margin-left:-55px;
+	top: 50px;
+	border-bottom:1px solid #fff;
+}
+</style>
+
+<div class="container-fluid" style="margin-bottom:30px; max-width:1200px;">
+<div class="row">
+
+ <div class="col-md-3 col-sm-3 col-3 mt-3">
+ <div class="pricingTable">
+ <div class="pricingTable-header">
+ <h3 class="heading">Пробный</h3>
+ <small id="emailHelp" class="form-text text-muted">только до 20.07.19</small>
+ <span class="price-value">
+ <span class="currency">₽</span>49
+ <span class="month">руб</span>
+ </span>
+ </div>
+ <div class="pricing-content">
+ <ul>
+ <li>Ежедневная отправка отчетов</li>
+ <li><b>SMS/Email</b> уведомление</li>
+ <li>Загрузка <b>XML</b> файлов</li>
+ <li><b>Нулевой</b> и <b>Полный</b> расчеты</li>
+ <li><b>Автозаполнение</b> данных</b></li>
+ <li><b>Уточненка</b> - бесплатно</b></li>
+ </ul>
+ <a href="index.php?dir=main_page&page=variant_otcheta" class="read">Сдать расчет 4-ФСС</a>
+ </div>
+ </div>
+ </div>
+
+ <div class="col-md-3 col-sm-3 col-3 mt-3">
+ <div class="pricingTable">
+ <div class="pricingTable-header">
+ <h3 class="heading">Уполномочка</h3>
+ <span class="price-value">
+ <span class="currency">₽</span>99
+ <span class="month">руб</span>
+ </span>
+ </div>
+ <div class="pricing-content">
+ <ul>
+ <li>Ежедневная отправка отчетов</li>
+ <li><b>SMS/Email</b> уведомление</li>
+ <li>Загрузка <b>XML</b> файлов</li>
+ <li><b>Нулевой</b> и <b>Полный</b> расчеты</li>
+ <li><b>Автозаполнение</b> данных</b></li>
+ <li><b>Уточненка</b> - бесплатно</b></li>
+ </ul>
+ <a href="index.php?dir=main_page&page=variant_otcheta" class="read">Сдать расчет 4-ФСС</a>
+ </div>
+ </div>
+ </div>
+
+ <div class="col-md-3 col-sm-3 col-3 mt-3">
+ <div class="pricingTable">
+ <div class="pricingTable-header">
+ <h3 class="heading">Квартальный</h3>
+ <span class="price-value">
+ <span class="currency">₽</span>249
+ <span class="month">руб</span>
+ </span>
+ </div>
+ <div class="pricing-content">
+ <ul>
+ <li>Ежедневная отправка отчетов</li>
+ <li><b>SMS/Email</b> уведомление</li>
+ <li>Загрузка <b>XML</b> файлов</li>
+ <li><b>Нулевой</b> и <b>Полный</b> расчеты</li>
+ <li><b>Автозаполнение</b> данных</b></li>
+ <li><b>Уточненка</b> - бесплатно</b></li>
+ </ul>
+ <a href="index.php?dir=main_page&page=variant_otcheta" class="read">Сдать расчет 4-ФСС</a>
+ </div>
+ </div>
+ </div>
+
+ <div class="col-md-3 col-sm-3 col-3 mt-3">
+ <div class="pricingTable">
+ <div class="pricingTable-header">
+  <div class="best">
+ лучший <br/>выбор
+ </div>
+ <h3 class="heading">Годовая Подписка</h3>
+ <span class="price-value">
+ <span class="currency">₽</span>799
+ <span class="month">руб</span>
+ </span>
+ </div>
+ <div class="pricing-content">
+ <ul>
+ <li>Ежедневная отправка отчетов</li>
+ <li><b>SMS/Email</b> уведомление</li>
+ <li>Загрузка <b>XML</b> файлов</li>
+ <li><b>Нулевой</b> и <b>Полный</b> расчеты</li>
+ <li><b>Автозаполнение</b> данных</b></li>
+ <li><b>Уточненка</b> - бесплатно</b></li>
+ </ul>
+ <a href="index.php?dir=main_page&page=variant_otcheta" class="read">Сдать расчет 4-ФСС</a>
+ </div>
+ </div>
+ </div>
+
+</div><!-- ./row -->
+</div><!-- ./container -->
