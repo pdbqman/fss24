@@ -35,8 +35,8 @@ class PortalFssRu extends resources_FSS{
 	public $two_or_one			= null;
 		
 	public function __construct( $login ){	
-		if( $login == 'admin')$auth	= 	"login=%D1%84%D0%B8%D0%BB%D0%B8%D0%B0%D0%BB12&password=1";
-		if( $login == 'user')$auth	= 	"login=district13&password=p555777q";
+		if( $login == 'admin')$auth	= 	"login=%D1%84%D0%B8%D0%BB%D0%B8%D0%B0%D0%BB12&password=eweszxfgvvv";
+		if( $login == 'user')$auth	= 	"login=district13&password=ersdfvdgh";
 		
 		parent::__construct( $this->domain );
 		
